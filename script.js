@@ -1,10 +1,10 @@
-/* ── NAV SCROLL ── */
+
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 30);
 });
 
-/* ── ACTIVE NAV LINK ── */
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -18,12 +18,12 @@ window.addEventListener('scroll', () => {
     });
 });
 
-/* ── SCROLL REVEAL ── */
+
 const faders = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // stagger siblings
+            
             const sibs = [...entry.target.parentElement.querySelectorAll('.fade-in:not(.visible)')];
             const idx  = sibs.indexOf(entry.target);
             entry.target.style.transitionDelay = (idx * 0.1) + 's';
@@ -35,7 +35,7 @@ const observer = new IntersectionObserver(entries => {
 
 faders.forEach(el => observer.observe(el));
 
-/* ── CONTACT FORM ── */
+
 const form = document.getElementById('contactForm');
 if (form) {
     form.addEventListener('submit', function (e) {

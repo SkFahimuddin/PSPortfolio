@@ -1,6 +1,4 @@
-/* ══════════════════════════
-   ROOT & RESET
-══════════════════════════ */
+
 :root {
     --white:    #ffffff;
     --bg:       #f4f6fb;
@@ -9,7 +7,7 @@
     --border:   #e5e7eb;
     --card:     #ffffff;
 
-    /* accent colours */
+    
     --blue:     #3b82f6;
     --blue-bg:  #eff6ff;
     --green:    #22c55e;
@@ -46,9 +44,7 @@ img { max-width: 100%; display: block; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 10px; }
 
-/* ══════════════════════════
-   NAV
-══════════════════════════ */
+
 nav {
     position: fixed; top: 0; left: 0; width: 100%;
     z-index: 999;
@@ -96,9 +92,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 .nav-btn:hover { background: #2563eb; transform: translateY(-1px); }
 
-/* ══════════════════════════
-   HERO
-══════════════════════════ */
+
 #hero {
     min-height: 100vh;
     display: flex;
@@ -213,7 +207,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 }
 .hero-socials a:hover { background: var(--blue); color: var(--white); border-color: var(--blue); transform: translateY(-2px); }
 
-/* Hero card */
+
 .hero-card {
     background: var(--white);
     border: 1px solid var(--border);
@@ -256,9 +250,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .hcard-stat strong { display: block; font-size: 1.3rem; font-weight: 800; color: var(--blue); }
 .hcard-stat span { font-size: 0.72rem; color: var(--muted); font-weight: 600; }
 
-/* ══════════════════════════
-   SECTIONS SHARED
-══════════════════════════ */
+
 section { padding: 80px 6%; }
 .section-alt { background: var(--bg); }
 
@@ -281,9 +273,6 @@ section { padding: 80px 6%; }
     color: var(--text);
 }
 
-/* ══════════════════════════
-   FADE IN
-══════════════════════════ */
 .fade-in {
     opacity: 0;
     transform: translateY(22px);
@@ -291,9 +280,7 @@ section { padding: 80px 6%; }
 }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-/* ══════════════════════════
-   ABOUT
-══════════════════════════ */
+
 #about { background: var(--white); }
 .about-grid {
     display: grid;
@@ -351,9 +338,6 @@ section { padding: 80px 6%; }
     font-weight: 500;
 }
 
-/* ══════════════════════════
-   PROJECTS
-══════════════════════════ */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -415,9 +399,7 @@ section { padding: 80px 6%; }
 }
 .pcard-foot a:hover { color: var(--blue); }
 
-/* ══════════════════════════
-   SKILLS
-══════════════════════════ */
+
 #skills { background: var(--white); }
 .skills-grid {
     display: grid;
@@ -490,9 +472,7 @@ section { padding: 80px 6%; }
 .ach-item:hover { border-color: var(--blue); }
 .ach-item i { color: var(--blue); font-size: 1rem; flex-shrink: 0; }
 
-/* ══════════════════════════
-   CONTACT
-══════════════════════════ */
+
 .contact-sub { font-size: 0.97rem; color: var(--muted); margin-top: -24px; margin-bottom: 36px; }
 .contact-wrap {
     display: grid;
@@ -549,9 +529,7 @@ section { padding: 80px 6%; }
 .fg textarea { height: 110px; resize: none; }
 #formMsg { margin-top: 10px; font-size: 0.85rem; color: var(--green); font-weight: 600; }
 
-/* ══════════════════════════
-   FOOTER
-══════════════════════════ */
+
 footer {
     background: var(--text);
     color: rgba(255,255,255,0.6);
@@ -578,9 +556,7 @@ footer strong { color: white; }
 }
 .foot-links a:hover { background: var(--blue); color: white; transform: translateY(-2px); }
 
-/* ══════════════════════════
-   RESPONSIVE
-══════════════════════════ */
+
 @media (max-width: 900px) {
     .hero-inner { flex-direction: column; text-align: center; }
     .hero-badge, .hero-role { margin-left: auto; margin-right: auto; }
