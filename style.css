@@ -564,6 +564,7 @@ footer {
     font-size: 0.85rem;
 }
 footer span { color: #f87171; }
+.hidden-credit { color: var(--text); user-select: text; font-size: 11px; }
 footer strong { color: white; }
 .foot-links { display: flex; gap: 12px; }
 .foot-links a {
